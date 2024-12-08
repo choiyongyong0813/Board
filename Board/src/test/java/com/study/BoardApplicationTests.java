@@ -20,17 +20,18 @@ class BoardApplicationTests {
 	public void testContext() {
 		try {
 			System.out.println("=================================================");
-			System.out.println(context.getBean("SqlSessionFactory"));
+			System.out.println(context.getBean("sqlSessionFactory"));
 			System.out.println("=================================================");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
 	@Test
 	public void testSqlSessionFactory() {
 		try {
 			System.out.println("=================================================");
-			System.out.println(context.getBean(sessionFactory.toString()));
+			System.out.println(sessionFactory.toString());
 			System.out.println("=================================================");
 		} catch (Exception e) {
 			e.printStackTrace();
